@@ -23,8 +23,8 @@ public class Test02 {
         List<String> list = new ArrayList<>();
         Collections.addAll(list, "zhangsan,23","lisi,24","wangwu,25");
 
-        Map<String, String> collect = list.stream().filter(p -> Integer.parseInt(p.split(",")[1]) >= 24)
-                .collect(Collectors.toMap(key -> key.split(",")[0], value -> value.split(",")[1]));
+        Map<String, Integer> collect = list.stream().filter(p -> Integer.parseInt(p.split(",")[1]) >= 24)
+                .collect(Collectors.toMap(key -> key.split(",")[0], value -> Integer.parseInt(value.split(",")[1])));
 
         System.out.println(collect);
     }
