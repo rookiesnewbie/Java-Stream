@@ -17,7 +17,14 @@ public class ImmutableOfList {
         //一旦创建完成，就不能修改
         List<String> list = List.of("李白","铠","兰陵王","小乔","大乔","孙策","周瑜","诸葛亮");
 
-        list.add("zs");
+        for (String s : list) {
+            System.out.print(s + " ");
+        }
+
+        list.add("lisi");
+        list.set(0,"lisi");
+        list.remove("铠");
+
 
     }
 
