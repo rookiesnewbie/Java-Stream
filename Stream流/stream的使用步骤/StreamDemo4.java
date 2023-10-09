@@ -1,3 +1,5 @@
+package stream的使用步骤;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
